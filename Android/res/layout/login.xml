@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView 
+        android:textColor="#263238"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="75dp"
+        android:layout_centerHorizontal="true"
+        android:text="Kqulo" />
+    
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingBottom="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="20dp"
+        android:layout_centerInParent="true"
+        >
+		    
+		    <EditText
+            android:id="@+id/username"
+            style="@style/editext_graybg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/ic_username"
+            android:hint="Username" />
+		    
+		    <EditText
+            android:id="@+id/pwd"
+            style="@style/editext_graybg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/ic_pwd"
+            android:hint="Password"
+            android:inputType="textPassword" />
+		    
+		    <TextView 
+		        android:id="@+id/tv"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="#ff0000"
+		        
+		        />
+        
+		    <Button 
+		        android:id="@+id/btnLogin"
+		        style="@style/btn_large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+		        />
+		    
+		    <Button
+		        android:id="@+id/forgotpwd"
+		        style="@style/forgot_pwd"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="#263238"
+		        android:layout_marginTop="3dp"
+		        android:text="Forgot password?"
+		        />
+		    </LinearLayout>
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:layout_alignParentBottom="true"
+		        android:paddingBottom="20dp"
+		        android:paddingLeft="15dp"
+		        android:paddingRight="15dp"
+		        android:paddingTop="20dp"
+		        >
+		    
+		        <Button 
+		        android:id="@+id/btnSignup"
+		        style="@style/btn_large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Signup"
+		        />
+		    <!-- <Button 
+		        android:id="@+id/btnfbLogin"
+                style="@style/btn_large_fb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Login via Facebook"
+		        />-->
+    
+    </LinearLayout>
+    
+    
+        
+    
+
+</RelativeLayout>
